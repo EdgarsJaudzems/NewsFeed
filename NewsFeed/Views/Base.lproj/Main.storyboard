@@ -75,10 +75,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="D7g-LY-6Ry">
                         <barButtonItem key="leftBarButtonItem" image="info.circle" catalog="system" id="uCm-dh-267">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" systemColor="labelColor"/>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="arrow.clockwise" catalog="system" id="9ug-hi-uuo">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" systemColor="labelColor"/>
                             <connections>
                                 <action selector="refreshData:" destination="BYZ-38-t0r" id="7So-IC-jpd"/>
                             </connections>
@@ -206,7 +206,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Read full article">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="Bfw-kl-IXo" kind="show" id="gsa-xh-RXi"/>
@@ -216,7 +216,7 @@
                                 <rect key="frame" x="165" y="605" width="84" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Save article">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <action selector="saveToReadingList:" destination="KeH-Ac-zPk" eventType="touchUpInside" id="Tgu-nT-pvF"/>
@@ -297,17 +297,12 @@
         <scene sceneID="QYI-PU-gNo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aD3-gm-pPC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="News" image="newspaper" catalog="system" selectedImage="newspaper" id="fxD-X1-xb5">
-                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="News" image="newspaper" catalog="system" selectedImage="newspaper" id="fxD-X1-xb5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rzE-e1-VSg">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
+                        <color key="tintColor" systemColor="labelColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -327,7 +322,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="labelColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="aD3-gm-pPC" kind="relationship" relationship="viewControllers" id="9aQ-0V-fAV"/>
@@ -363,6 +358,9 @@
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="line.horizontal.3.decrease.circle" catalog="system" width="128" height="121"/>
         <image name="newspaper" catalog="system" width="128" height="108"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

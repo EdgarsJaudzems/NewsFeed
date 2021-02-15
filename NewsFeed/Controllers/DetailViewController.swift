@@ -13,7 +13,6 @@ class DetailViewController: UIViewController {
     var items: [Item] = []
     var savedData: [ReadingList] = []
 
-
     var webURLString = String()
     var titleString = String()
     var contentString = String()

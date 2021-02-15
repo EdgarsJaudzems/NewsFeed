@@ -10,8 +10,6 @@ import Gloss
 
 class NewsTableViewCell: UITableViewCell {
 
-    
-    
     @IBOutlet weak var newsImageView: UIImageView!
     @IBOutlet weak var newsLabelView: UILabel!
     

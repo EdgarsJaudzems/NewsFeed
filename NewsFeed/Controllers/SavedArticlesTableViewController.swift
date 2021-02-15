@@ -10,7 +10,8 @@ import UIKit
 
 class SavedArticlesTableViewController: UITableViewController {
 
-    var savedItems: [String: Any] = [:]
+    var items: [Item] = []
+//    var savedItems: [String: Any] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,10 +37,10 @@ class SavedArticlesTableViewController: UITableViewController {
             return UITableViewCell()
         }
 
-//        let feed = savedItems[indexPath.row]
-//        cell.setUI(with: feed)
-//        cell.showImage(with: feed)
-//        cell.selectionStyle = .none
+        let feed = items[indexPath.row]
+        cell.setUI(with: feed)
+        cell.showImage(with: feed)
+        cell.selectionStyle = .none
         
         return cell
     }
